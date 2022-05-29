@@ -8,15 +8,6 @@ import { stripe } from '../services/stripe';
 
 import styles from './home.module.scss';
 
-// Client-side
-// Server-side
-// Static Site Generation
-
-// Post do blog
-
-// Conteúdo do post do blog (SSG)
-// Comentários do post (Client-side)
-
 interface HomeProps {
   product: {
     priceId: string;
@@ -34,7 +25,7 @@ export default function Home({ product }: HomeProps) {
         <section className={styles.hero}>
           <span>👏 Hey, welcome</span>
           <h1>
-            News about <br /> the <span>React</span> world.
+            News about the <span>React</span> world.
           </h1>
           <p>
             Get access to all the publications <br />
