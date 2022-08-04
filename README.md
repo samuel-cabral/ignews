@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O ig.news é um site de notícias sobre o mundo do React, com acesso por assinatura mensal de US$9.90
+O ig.news é um site de assinatura de conteúdo sobre notícias do mundo do React, com acesso por assinatura mensal de US$9.90
 
 ## 🔖 Layout
 
