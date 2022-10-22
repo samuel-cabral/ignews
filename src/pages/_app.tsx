@@ -6,11 +6,14 @@ import { repositoryName } from '../../prismicio';
 
 import { AppProps } from 'next/app';
 import { Header } from '../components/Header';
-import { SessionProvider as NextAuthSessionProvider } from 'next-auth/react';
+import {
+  SessionProvider as NextAuthSessionProvider,
+  SessionProviderProps,
+} from 'next-auth/react';
 
 import '../styles/global.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps<SessionProviderProps>) {
   return (
     <NextAuthSessionProvider session={pageProps.session}>
       <PrismicProvider
