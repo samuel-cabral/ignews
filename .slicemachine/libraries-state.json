@@ -1,5 +1,84 @@
 {
   "slices": {
-    "components": {}
+    "components": {
+      "posts": {
+        "library": "slices",
+        "id": "posts",
+        "name": "PostLink",
+        "description": "Posts",
+        "model": {
+          "id": "posts",
+          "type": "SharedSlice",
+          "name": "PostLink",
+          "description": "Posts",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Posts",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Badly",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Sint eu enim eiusmod consectetur irure reprehenderit eiusmod nulla sint ex ipsum anim. Nostrud nisi velit cupidatat eiusmod voluptate velit. Minim nulla sint est cupidatat ex cillum ut id proident.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "posts"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/samuel/Rocketseat/ignite/reactjs/aulas/ignews/.slicemachine/assets/slices/PostLink/default/preview.png",
+            "width": 800,
+            "height": 80
+          }
+        }
+      }
+    }
   }
 }
