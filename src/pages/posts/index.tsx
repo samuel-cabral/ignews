@@ -1,6 +1,7 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { getPrismicClient } from '../../services/prismic';
+import { RichText } from 'prismic-dom';
 import styles from './styles.module.scss';
 
 type Post = {
@@ -42,12 +43,10 @@ export const getStaticProps: GetStaticProps = async () => {
     pageSize: 100,
   });
 
-  console.log(JSON.stringify(response, null, 2));
-
   const posts = response.map(post => {
     return {
       slug: post.uid,
-      title: post.data.title,
+      title: RichText.asText(post.data.title),
       excerpt:
         post.data.content.find(content => content.type === 'paragraph')?.text ??
         '',
